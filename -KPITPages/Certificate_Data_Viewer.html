@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--------------- Meta tags start --------------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name=theme-color content="#FEFAF2" />
+    <meta name="referrer" content="origin">
+    <!-- Page title -->
+    <title>CERTIFICATE DATABASE VIEWER </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/scss/app.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="d-flex">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="heading">
+                    <h2 class="roboto-regular-italic">CERTIFICATE DATABASE VIEWER </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard">
+        <h2 class="text-center">Database’s Dashboard</h2>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                    <div class="box">
+                        <h3>Total Generated 
+                            RootCA Certificate</h3>
+                        <p>1</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                    <div class="box box-2">
+                        <h3>Total Generated 
+                            SubCA Certificate</h3>
+                        <p>1</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                    <div class="box box-3">
+                        <h3>Total Generated
+                            Software CA Certificate</h3>
+                        <p>3</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                    <div class="box box-4">
+                        <h3>Total Active
+                            Certificate</h3>
+                        <p>4</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                    <div class="box box-5">
+                        <h3>Total Idle 
+                            Certificate</h3>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2 mb-3 mb-lg-0">
+                    <div class="box box-6">
+                        <h3>Total Revoked
+                            Certificate</h3>
+                        <p>1</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div class="table-heading">
+        <span class="form-heading roboto-regular">CERTIFICATE DATABASE ENTRIES</span>
+    </div>
+
+    <div class="certificate-entries mt-5">
+        <div class="container">
+            <div class="row">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">SR NO.</th>
+                        <th scope="col">SERIAL NUMBER</th>
+                        <th scope="col">IDENTITY</th>
+                        <th scope="col">VERIFIED BY</th>
+                        <th scope="col">STATUS</th>
+                        <th scope="col">COMMENTS</th>
+                        <th scope="col">GENERATION TIME</th>
+                        <th scope="col">REVOCATION  TIME</th>
+                        <th scope="col">EXPIRATION TIME</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">1</th>
+                        <td>0x12345678</td>
+                        <td class="rootca">RootCA</td>
+                        <td class="rootca">RootCA</td>
+                        <td class="status valid">VALID</td>
+                        <td>None</td>
+                        <td>10:46:56</td>
+                        <td>00:00</td>
+                        <td>2033-10-17</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">1</th>
+                        <td>0x987654321</td>
+                        <td class="subca">SubCA</td>
+                        <td class="rootca">RootCA</td>
+                        <td class="status valid">VALID</td>
+                        <td>None</td>
+                        <td>10:30:41</td>
+                        <td>00:00</td>
+                        <td>2033-10-19</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">1</th>
+                        <td>0x12345678</td>
+                        <td class="rootca">RootCA</td>
+                        <td class="rootca">RootCA</td>
+                        <td class="status valid">VALID</td>
+                        <td>None</td>
+                        <td>10:46:56</td>
+                        <td>00:00</td>
+                        <td>2033-10-17</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">1</th>
+                        <td>0x987654321</td>
+                        <td class="subca">SubCA</td>
+                        <td class="rootca">RootCA</td>
+                        <td class="status revoked">VALID</td>
+                        <td>None</td>
+                        <td>10:30:41</td>
+                        <td>00:00</td>
+                        <td>2033-10-19</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">1</th>
+                        <td>0x12345678</td>
+                        <td class="rootca">RootCA</td>
+                        <td class="rootca">RootCA</td>
+                        <td class="status valid">VALID</td>
+                        <td>None</td>
+                        <td>10:46:56</td>
+                        <td>00:00</td>
+                        <td>2033-10-17</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">1</th>
+                        <td>0x987654321</td>
+                        <td class="subca">SubCA</td>
+                        <td class="rootca">RootCA</td>
+                        <td class="status revoked">VALID</td>
+                        <td>None</td>
+                        <td>10:30:41</td>
+                        <td>00:00</td>
+                        <td>2033-10-19</td>
+                      </tr>                      
+                    </tbody>
+                  </table>
+                  <a href="" class="fetch-data">Fetch Data <img src="./assets/images/fetch.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/jquery/bootstrap.min.js"></script>
+    <script src="assets/js/app.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--------------- Meta tags start --------------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name=theme-color content="#FEFAF2" />
+    <meta name="referrer" content="origin">
+    <!-- Page title -->
+    <title>SubCA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/scss/app.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="d-flex">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="heading">
+                    <h2 class="roboto-regular-italic">CERTIFICATE UTILITY for ROOTCA</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="certificate-inputs">
+        <div class="container">
+            <div class="row">
+                <div class="main-form">                    
+                    <form method="get" action="rootCA.html" class="form">
+                        <div class="certificate-form-content">
+                            <span class="form-heading roboto-regular">Certificate Inputs</span>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="roboto-bold-italic">Common Name</label>
+                                    <input type="text" name="companyname" class="user-input" placeholder="Enter your input"
+                                        required="">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">Country</label>
+                                            <input type="text" name="country" class="user-input" placeholder="Enter your input"
+                                                required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">State / Province</label>
+                                            <input type="text" name="state" class="user-input" placeholder="Enter your input"
+                                                required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">Locality</label>
+                                            <input type="text" name="locality" class="user-input" placeholder="Enter your input"
+                                                required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">Organization</label>
+                                            <input type="text" name="organization" class="user-input" placeholder="Zip code"
+                                                required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">Organization Unit</label>
+                                            <input type="text" name="organizationunit" class="user-input" placeholder="Zip code"
+                                                required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">Set the validity (years)</label>
+                                            <input type="text" name="validity" class="user-input" placeholder="City"
+                                                required="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between form-radio">
+                            <div class="col-md-4">
+                                <div class="form-row mt-4">
+                                    <span class="form-heading roboto-regular">Purpose</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="DEVELOPMENT" value="option1" checked>
+                                        <label class="form-check-label" for="DEVELOPMENT">
+                                            DEVELOPMENT
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="PRODUCTION" value="option2">
+                                        <label class="form-check-label" for="PRODUCTION">
+                                            PRODUCTION
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-row mt-4">
+                                    <span class="form-heading roboto-regular">Cryptographic Settings</span>
+                                    <ul class="mb-0">
+                                        <li>Asymmetric Cryptography</li>
+                                        <li>RSA - 3072 bits (SWEET 500)</li>
+                                        <li>RSA - 2048 bits (SWEET 400)</li>
+                                        <li>Digest - SHA256</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="submit-buttons d-flex justify-content-center">
+                            <button type="submit" class="my-button" disabled><img src="assets/images/certificate.svg">  Generate RootCA Certificate</button>
+                        </div>                   
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/jquery/bootstrap.min.js"></script>
+    <script src="assets/js/app.js" defer></script>
+
+</body>
+
+</html>

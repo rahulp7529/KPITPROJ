@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--------------- Meta tags start --------------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name=theme-color content="#FEFAF2" />
+    <meta name="referrer" content="origin">
+    <!-- Page title -->
+    <title>Certificate Generation Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/scss/app.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="d-flex">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="heading">
+                    <h2 class="roboto-regular-italic">ECU IDENTITY SOFTWARE CERTIFICATES GENERATION TOOL</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="certificate-inputs">
+        <div class="container">
+            <div class="row">
+                <div class="main-form">                    
+                    <form class="form">
+                        <div class="certificate-form-content">
+                            <span class="form-heading roboto-regular">Certificate Inputs</span>
+                            <div class="form-row">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">SubCA Certificate File Path</label>
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Browse for SubCA Certificate File" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">&#160;</label>
+                                            <button type="submit" class="my-button">Browse</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="certificate-form-content mt-5">
+                            <span class="form-heading roboto-regular">Certificate Signing Requests Inputs</span>
+                            <div class="form-row">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">Certificate Request Name</label>
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Certificate Request Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">Platform</label>
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Request File’s Platform" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">Purpose</label>
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Request File’s Purpose" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">Status</label>
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Status" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label class="roboto-bold-italic">&#160;</label>
+                                            <button type="submit" class="my-button">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Certificate Request Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Request File’s Platform" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Request File’s Purpose" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Status" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <button type="submit" class="my-button">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Certificate Request Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Request File’s Platform" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Request File’s Purpose" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Status" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <button type="submit" class="my-button">View Details</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Certificate Request Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Request File’s Platform" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Request File’s Purpose" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="Status" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <button type="submit" class="my-button">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                     
+                        <div class="row justify-content-between form-radio">
+                            <div class="col-md-6">
+                                <div class="form-row mt-4">
+                                    <span class="form-heading roboto-regular">Cryptographic Settings</span>
+                                    <ul class="mb-0">
+                                        <li>Asymmetric Cryptography      <span class="d-inline float-end">RSA - 3072 bits (SWEET 500)</span></li>
+                                        <li>RSA - 2048 bits (SWEET 400)  <span  class="d-inline float-end">Digest - SHA256</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-row mt-4 ocs-status">
+                                    <span class="form-heading roboto-regular">OCS Card Status</span>       
+                                    <span>Validation
+                                        Status</span>
+                                        <div class="form-group">
+                                            <span class="form-icon">
+                                                <img src="assets/images/card.svg" alt="image">
+                                            </span>
+                                            <input type="text" name="csrfile" class="user-input"
+                                                placeholder="OCS Card Status" required="">
+                                        </div> 
+                                        <button type="submit" class="my-button">Browse</button>                            
+                                </div>
+                            </div>
+                            
+                        </div>    
+                        <div class="submit-buttons d-flex justify-content-center">
+                            <button type="submit" class="my-button" disabled><img src="assets/images/certificate.svg">  Generate Software CA Certificate</button>
+                            <button type="submit" class="my-button" disabled><img src="assets/images/verifycertificate.svg">  Verify Certificate</button>
+                        </div>                
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/jquery/bootstrap.min.js"></script>
+    <script src="assets/js/app.js" defer></script>
+
+</body>
+
+</html>

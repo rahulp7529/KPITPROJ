@@ -1,0 +1,528 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-size: cover;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.my-button {
+  background: #667EEA;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 10px 30px;
+  width: 100%;
+  line-height: 16px;
+  text-shadow: 1px 1px #505b8f;
+}
+.my-button[disabled] {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+header {
+  padding: 18px 0;
+}
+header .d-flex {
+  border-bottom: 2px solid #D9D9D9;
+  padding-bottom: 18px;
+}
+header .logo {
+  margin-right: 30px;
+  background: black;
+  position: relative;
+}
+header .logo::after {
+  content: "";
+  border: 1px solid;
+  border-image-slice: 1;
+  width: 2px;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: auto;
+  right: -40px;
+  margin: 0 auto;
+  border-image-source: radial-gradient(circle, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.22) 50%, rgba(0, 0, 0, 0) 100%);
+}
+header .logo a {
+  height: 100%;
+  width: 100%;
+}
+header .logo a img {
+  padding: 10px 0;
+  margin: 0 20px;
+  width: 120px;
+  height: 52px;
+}
+header .heading {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  .red-head {
+    color: #800000;
+    font-size: 35px;
+  }
+}
+header .heading h2 {
+  font-size: 20px;
+  text-shadow: 1px 1px 10px BLACK;
+}
+
+form {
+  padding-top: 45px;
+}
+form label {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #0071FE;
+}
+form .user-input {
+  height: 38px;
+  padding: 10px 40px 10px 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 0px;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-appearance: none;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid rgba(32, 32, 32, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+form .user-input:focus, form .user-input:active {
+  transition: all 0.3s ease;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)) border-box;
+}
+form .form-group {
+  margin-bottom: 22px;
+  position: relative;
+}
+form .form-row {
+  padding: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  position: relative;
+}
+
+.certificate-form-content {
+  position: relative;
+}
+.certificate-form-content .form-heading {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
+  padding: 0 10px;
+  font-size: 12px;
+  position: absolute;
+  right: 40px;
+  top: -8px;
+  z-index: 1;
+  color: #0071FE;
+  text-shadow: 1px 1px #CCCCCC;
+}
+
+.form-row {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.form-row ul li {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.form-row .form-check label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.row.justify-content-between.form-radio {
+  position: relative;
+}
+.row.justify-content-between.form-radio .form-heading {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
+  padding: 0 10px;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: -8px;
+  z-index: 1;
+  color: #0071FE;
+  text-shadow: 1px 1px #CCCCCC;
+}
+
+.submit-buttons {
+  padding: 20px 0;
+}
+.submit-buttons .my-button {
+  max-width: 340px;
+  margin: 0 20px;
+}
+
+.login-form {
+  max-width: 445px;
+  margin: 0 auto;
+}
+.login-form .user-input {
+  padding: 10px 20px 10px 40px;
+}
+.login-form h2 {
+  color: #667EEA;
+  font-size: 32px;
+  font-weight: 600;
+}
+.login-form .form-icon img {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 2;
+}
+.login-form .validation-status {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.login-form .validation-status a {
+  padding: 10px;
+  background: #EDF2F7;
+  border: 1px solid #000000;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 500;
+  display: flex;
+  font-size: 15pxd;
+}
+.login-form .validation-status a[disabled] {
+  pointer-events: none;
+  cursor: no-drop;
+  opacity: 0.5;
+}
+.login-form .validation-status a img {
+  margin-right: 10px;
+}
+.login-form .validation-status a:first-child {
+  border-radius: 10px 0 0 10px;
+}
+.login-form .validation-status a:last-child {
+  border-radius: 0 10px 10px 0;
+  border-left: 1px solid transparent;
+}
+.login-form .validation-status a.active {
+  background: #D9D9D9;
+  color: #000000;
+}
+
+.next-btn a {
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+  background: #667EEA;
+  color: #fff;
+  border-radius: 5px;
+  text-shadow: 1px 1px black;
+}
+.next-btn a[disabled] {
+  pointer-events: none;
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+.links a {
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}
+
+.file-upload-button span {
+  display: none;
+}
+
+.ocs-status {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ocs-status .form-group {
+  margin-bottom: 0;
+}
+.ocs-status .form-group .user-input {
+  max-width: 200px;
+  padding: 10px 20px 10px 40px;
+}
+.ocs-status .form-group .form-icon img {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 2;
+}
+.ocs-status .my-button {
+  width: 110px;
+}
+
+.form-radio label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.entry-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #000;
+  text-shadow: 1px 1px 10px BLACK;
+}
+
+.dashboard h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.dashboard .box {
+  text-align: center;
+  padding: 10px;
+  background: #06ab70;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 1px 2px 5px rgb(0, 0, 0);
+}
+.dashboard .box.box-2 {
+  background: #eace86;
+}
+.dashboard .box.box-3 {
+  background: #6ca5db;
+}
+.dashboard .box.box-4 {
+  background: #7be70f;
+}
+.dashboard .box.box-5 {
+  background: #deb6b6;
+}
+.dashboard .box.box-6 {
+  background: #e32828;
+}
+.dashboard .box h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  min-height: 32px;
+}
+.dashboard .box p {
+  margin-bottom: 0;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+}
+
+.table-heading {
+  border: 1px solid #D9D9D9;
+  margin: 40px 0;
+  position: relative;
+}
+.table-heading .form-heading {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
+  padding: 0 10px;
+  font-size: 12px;
+  position: absolute;
+  right: 50%;
+  top: -8px;
+  z-index: 1;
+  color: #0071FE;
+  text-shadow: 1px 1px #CCCCCC;
+  transform: translate(50%, 0px);
+}
+
+.table thead tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2509803922);
+}
+.table thead tr th {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.table tbody tr td.rootca {
+  color: #15EA11;
+}
+.table tbody tr td.subca {
+  color: #FD9A06;
+}
+.table tbody tr td.status {
+  color: #000;
+}
+.table tbody tr td.status.revoked {
+  background: #F60707;
+}
+.table tbody tr td.status.valid {
+  background: #15EA11;
+}
+
+.links {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #abaaaa;
+  padding: 30px;
+  background: #d9d9d9;
+}
+.links .link-button {
+  background: #d9d9d9;
+  padding: 20px;
+  box-shadow: 2px 2px 2px #9f9d9d;
+  color: #008000;
+  font-size: 22px;
+  font-weight: 700;
+  border: 1px solid #ffffff;
+  border-width: 1px 0px 0px 1px;
+}
+.links .link-button img {
+  margin-right: 15px;
+}
+.links .link-button:hover {
+  box-shadow: 2px 4px 7px rgba(32, 32, 32, 0.368627451);
+}
+
+.fetch-data {
+  max-width: 450px;
+  padding: 10px;
+  background: black;
+  text-align: center;
+  color: #B8FF46;
+  font-size: 22px;
+  border-radius: 2px;
+  font-weight: 600;
+  margin: 40px auto 0 auto;
+}
+.fetch-data img {
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+}/*# sourceMappingURL=app.css.map */

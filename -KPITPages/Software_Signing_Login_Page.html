@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--------------- Meta tags start --------------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name=theme-color content="#FEFAF2" />
+    <meta name="referrer" content="origin">
+    <!-- Page title -->
+    <title>Signing Server</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/scss/app.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="d-flex">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="heading">
+                    <h2 class="roboto-regular-italic">SOFTWARE CERTIFICATE & SIGNING UTILITY</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="login-form">
+        <div class="container">
+            <h2 class="text-center">User Login</h2>
+            <form action="certificate_generation_tool.html" class="form">
+                <label for="User Authentication" class="roboto-bold">User Authentication</label>
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <span class="form-icon">
+                            <img src="assets/images/form-icons/form-user.svg" alt="image">
+                        </span>
+                        <input type="text" name="username" class="user-input" placeholder="Username"
+                            required="">
+                    </div>
+                    <div class="form-group col-12">
+                        <span class="form-icon">
+                            <img src="assets/images/form-icons/form-pass.svg" alt="image">
+                        </span>
+                        <input type="password" name="password" class="user-input" placeholder="password"
+                            required="">
+                    </div>
+                    <button type="submit" class="my-button" disabled>Login</button>
+                </div>
+            </form>
+            <div class="validation-status">
+                <a href="#!" class="active"><img src="assets/images/card.svg"> Validate Smart Card</a>
+                <a href="#!"> Authentication Status</a>
+            </div>
+            <div class="next-btn">
+                <a href="#!" class="next-btn">Next</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/jquery/bootstrap.min.js"></script>
+    <script src="assets/js/app.js" defer></script>
+
+</body>
+
+</html>
